@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, AppBar, Toolbar, Typography, IconButton } from '@material-ui/core';
 import { useStyles } from './style';
-import { Menu } from '@material-ui/icons';
+import { Menu, AccountCircle, VideoCall, Apps, MoreVert } from '@material-ui/icons';
 
 
 function TopBar() {
@@ -9,15 +9,23 @@ const classes = useStyles();
 
     return(
         <div className={classes.root}>
-        <AppBar position="static" className={classes.bar}>
+        <AppBar position="static" color="inherit" className={classes.appBar}>
           <Toolbar>
-            <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+            <IconButton className={classes.menuIcon} color="inherit">
               <Menu />
             </IconButton>
-            <Typography variant="h6" className={classes.title}>
-              News
-            </Typography>
-            <Button color="inherit">Login</Button>
+            <img className={classes.logo} src="/images/preto.png" />
+            <div className={classes.grow} />
+            <IconButton className={classes.menuButton} color="inherit">
+              <VideoCall />
+            </IconButton>
+            <IconButton className={classes.menuButton} color="inherit">
+              <Apps />
+            </IconButton>
+            <IconButton className={classes.menuButton} color="inherit">
+              <MoreVert />
+            </IconButton>
+            <Button startIcon={<AccountCircle />} variant="outlined" color="primary">Fazer Login</Button>
           </Toolbar>
         </AppBar>
       </div>

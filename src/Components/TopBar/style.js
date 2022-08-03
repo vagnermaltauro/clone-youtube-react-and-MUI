@@ -4,7 +4,17 @@ export const useStyles = makeStyles((theme) => ({
     root: {
         height: '100vh',
     },
-    bar: {
-        backgroundColor: 'red',
+    appBar: {
+        boxShadow: 'none',
+    },
+    grow: {
+        flexGrow: 1,
+    },
+    menuIcon: {
+        paddingRight: theme.spacing(5),
+        paddingLeft: theme.spacing(3),
+    },
+    logo: {
+        height: '25px',
     }
 }));
