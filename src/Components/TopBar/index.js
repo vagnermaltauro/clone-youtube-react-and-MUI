@@ -3,7 +3,6 @@ import { Button, AppBar, Toolbar, Typography, IconButton } from '@material-ui/co
 import { useStyles } from './style';
 import { Menu, AccountCircle, VideoCall, Apps, MoreVert } from '@material-ui/icons';
 
-
 function TopBar() {
 const classes = useStyles();
 
