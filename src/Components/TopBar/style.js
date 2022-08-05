@@ -6,6 +6,7 @@ export const useStyles = makeStyles((theme) => ({
     },
     appBar: {
         boxShadow: 'none',
+        zIndex: "1100, !important",
     },
     grow: {
         flexGrow: 1,
